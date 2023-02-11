@@ -14,7 +14,9 @@ int main()
   upper = 300; /*upper limit */ 
   step = 20;   /*step size */
 
-/*Fahrenheit to Celsius */
+/*Using while loop*/
+
+  /*Fahrenheit to Celsius */
   fahr = lower;
   printf("%s\n", headingF);
   while (fahr <= upper){
@@ -31,4 +33,9 @@ int main()
     printf("%3.0f\t%6.1f\n", celsius, fahr);
     celsius = celsius + step;
   }
+
+/*Using for loop*/
+
+  for(fahr = lower; fahr <= upper; fahr + 20)
+    printf("%3d\t%6.1f\n", fahr, (5.0/9.0)*(fahr-32));
 }
